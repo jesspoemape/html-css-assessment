@@ -1,0 +1,75 @@
+* {Font-size: 16px; }
+
+body {
+    background: url("img/main-bg.jpeg") no-repeat top center;
+    background-size: cover;
+    height: 100vh;
+}
+
+header {
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+.icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.icons svg {
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+}
+svg {
+    fill: #fff;
+    width: 70px;
+    height: 70px;
+}
+
+header ul {
+    display: none;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+header ul li {
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 1.7em;
+    font-weight: 700;
+}
+.title {
+    font-family: sans-serif;
+    font-weight: 900;
+    color: #fff;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    font-size: 4.5em;
+}
+h2 {
+    font-size: 2.5em;
+}
+.more {
+    display: flex;
+    justify-content: center;
+}
+/* once we reach larger than 750px, apply these new styles*/
+@media(min-width: 750px) {
+    header {
+        margin-top: 25px;
+    }
+    header ul {
+        display: flex;
+    }
+    header svg {
+        display: none;
+    }
+}
